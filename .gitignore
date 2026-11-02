@@ -1,0 +1,22 @@
+# Python environment and cache
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+
+# Large training checkpoints
+models/nca_checkpoint_*.pth
+models/nca_pool_checkpoint_*.pth
+models/nca_regeneration_checkpoint_*.pth
+
+# Initial test outputs
+models/nca_test.pth
+models/nca_pool_test.pth
+results/loss_test.npy
+results/loss_pool_test.npy
+results/output_test.png
+# Early experiment scripts
+train.py
+train_pool.py
+test_stability.py
+test_regeneration.py
